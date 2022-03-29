@@ -10,8 +10,7 @@ ___
 
 Ask Matt to get you added to the list of Anatra and Gaussian users.
 
-Familiarise yourself with the 'Introduction to the Anatra HTC service':
-https://research-software-skills-bath.github.io/intro-anatra/00_schedule.html
+Familiarise yourself with the (Introduction to the Anatra HTC service)[https://research-software-skills-bath.github.io/intro-anatra/00_schedule.html]
 
 ___
 
@@ -47,14 +46,9 @@ ___
 
 The UNIX language is used to interact with the terminal.
 
-Learn and get used to the following basic unix commands (ls, cp, rm, mv, cat, head, tail, cd, pwd, mkdir, rmdir) from this site: https://www.unixtutorial.org/basic-unix-commands
-Also grep: grep string filename(s) = looks for the string in the files
-Also nano: this is used to edit files. If editted, use ctrl + O -> enter to save, and ctrl + X to exit.
-When changing directory, `cd` alone returns to the home directory, as does `cd ~/`, whilst `cd ..` moves back one directory.
+Learn and get used to the following basic unix commands (ls, cp, rm, mv, cat, head, tail, cd, pwd, mkdir, rmdir). See this useful link.)[https://www.unixtutorial.org/basic-unix-commands]
 
-An asterisk `*` is used as a wildcard, e.g. `ls *.gjf` will list all files ending in .gjf. Be careful with this, especially when removing files (please avoid using `rm *`).
-The tab key can be used to auto complete words where the name is unambigious (e.g. ab won't autocomplete to abc if there is also a file abd in that directory)
-
+See LINK TO PAGE for some explanations.
 ___
 
 ### 6. Set up folders:
@@ -73,22 +67,22 @@ ___
 
 ### 7. Setting up the .bashrc
 
-In the simplest terms, the .bashrc is a script that is run whenever a terminal a loaded. You can put any command in the .bashrc file that you could type at the command prompt, and it will be run upon opening a terminal. This can save a lot of time by automatically loading and initialising certain modules and programmes (etc), rather than having to do this manually each time you start a new terminal.
-** When editing your .bashrc, have two sessions open. This means that if there is an error in your .bashrc you can still access Anatra. **
+In the simplest terms, the `.bashrc` is a script that is run whenever a terminal a loaded. You can put any command in the `.bashrc` file that you could type at the command prompt, and it will be run upon opening a terminal. This can save a lot of time by automatically loading and initialising certain modules and programmes (etc.), rather than having to do this manually each time you start a new terminal.
+**When editing your .bashrc, have two sessions open. This means that if there is an error in your .bashrc you can still access Anatra.**
 
 Under "# User specific aliases and functions" add the following lines (if not already present) to the .bashrc (`nano ~/.bashrc`)
 
-`module load gcc`
+>`module load gcc`
 
-`module load slurm`
+>`module load slurm`
 
-`module load gaussview`
+>`module load gaussview`
 
-`module load Anaconda3`
+>`module load Anaconda3`
 
-`module load TurboVNC`
+>`module load TurboVNC`
 
-`export PATH=/scratch/projects/pra-000x/scripts:$PATH`
+>`export PATH=/scratch/projects/pra-000x/scripts:$PATH`
 
 Replace `/pra-000x/` with the path to your own scripts directory (use `pwd` whilst in your scripts directory).
 
@@ -116,11 +110,11 @@ Anatra has a different build to that of Balena in order to protect the new HPC a
 
 **One time creation of environment**
 
-`conda create -n comp_chem`
+>`conda create -n comp_chem`
 
-`conda activate comp_chem`
+>`conda activate comp_chem`
 
-`conda install -c patonlab -c conda-forge Goodvibes OpenBabel`
+>`conda install -c patonlab -c conda-forge Goodvibes OpenBabel`
 
 comp_chem is very much a suggested name - call this whatever is memorable/easy to type.
 
@@ -144,14 +138,14 @@ Gaussian is a program we use for electronic structure modelling. Although we can
 
 *Warning*: never run a calculation directly through gaussview. Gaussian calculations should always be initiated in the command line using the relevant submission scripts (see job_submission folder)
 
-Wiki of Gaussian error messages: https://docs.computecanada.ca/wiki/Gaussian_error_messages
+(Wiki of Gaussian error messages)[https://docs.computecanada.ca/wiki/Gaussian_error_messages]
 
 The method of accessing Gaussview has changed from Balena. Below are instructions:
 
 1. If you are on Windows, download TightVNC software. *NOTE*: If you are on a University of Bath device you will need to email IT service desk to download this software.
 2. `vncserver -otp`
 
-> This will generate a VNC session (anatra-01:x) a one time password that can be used to login to a VNC session.
+> This will generate a VNC session (anatra-01:x) and a one time password that can be used to login to a VNC session.
 
 3. Open TightVNC and connect to your session. Remote Host: anatra.bath.ac.uk:590x. You will then be prompted for your password.
 4. This will now have now loaded a Red Hat Enterprise Linux window. Click Activities -> Terminal and use the `gview` command to open Gaussview.
@@ -159,8 +153,9 @@ The method of accessing Gaussview has changed from Balena. Below are instruction
 This session will last for 6 hours. It is possible for you to lock this Linux session by inactivity. If this happens then hit the enter key and type in your university password to unlock the Linux session.
 
 See `examples/gview_anatra.mp4` for a quick guide.  
+
 ___
 
 ### 11. Accessing Anatra remotely (off campus)
 
-To access Anatra from your personal laptop or any device off campus you must first set up a VPN to the Bath network (see https://www.bath.ac.uk/guides/setting-up-vpn-on-your-device/). Once done, you can access balena at any time by connecting to the VPN and running the following in a terminal window: `ssh -X yourusername@balena.bath.ac.uk`
+To access Anatra from your personal laptop or any device off campus you must first set up a (VPN to the Bath network)[ https://www.bath.ac.uk/guides/setting-up-vpn-on-your-device/]. Once done, you can access balena at any time by connecting to the VPN and running the following in a terminal window: `ssh -X yourusername@balena.bath.ac.uk`
