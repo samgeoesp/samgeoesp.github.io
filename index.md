@@ -75,10 +75,14 @@ Under "# User specific aliases and functions" add the following lines (if not al
 
 >
 >`module load gcc`
+>
 >`module load slurm`
+>
 >`module load gaussview`
 >`module load Anaconda3`
+>
 >`module load TurboVNC`
+>
 >`export PATH=/scratch/projects/pra-000x/scripts:$PATH`
 >
 
@@ -87,11 +91,13 @@ Replace `/pra-000x/` with the path to your own scripts directory (use `pwd` whil
 Once changes are made the .bashrc the terminal must be reloaded for them to come into effect.
 
 See `examples/bashrc_template.txt` for a basic template of a .bashrc.
+
 ___
 
 ### 8. Download Useful Resources
 
 Clone the useful_resouces repository from GitHub with the following command:
+
 `git clone https://github.com/the-grayson-group/useful_resources.git`
 
 Copy any useful scripts to your Scripts folder, e.g. q, gaussian16_submit.sh, stationary_points.sh, etc
@@ -109,11 +115,13 @@ Anatra has a different build to that of Balena in order to protect the new HPC a
 
 **One time creation of environment**
 
+>
 >`conda create -n comp_chem`
-
+>
 >`conda activate comp_chem`
-
+>
 >`conda install -c patonlab -c conda-forge Goodvibes OpenBabel`
+
 
 comp_chem is very much a suggested name - call this whatever is memorable/easy to type.
 
@@ -133,9 +141,9 @@ ___
 
 ### 10. Gaussian
 
-Gaussian is a program we use for electronic structure modelling. Although we can use many of gaussian's functionalities in the command line, it is often useful to access gaussian using gaussview. This allows the visulation of molecules, and provides a useful interface for managing, running and analysing calculations.
+Gaussian is a program we use for electronic structure modelling. Although we can use many of Gaussian's functionalities in the command line, it is often useful to access Gaussian using Gaussview. This allows the visulation of molecules, and provides a useful interface for managing, running and analysing calculations.
 
-*Warning*: never run a calculation directly through gaussview. Gaussian calculations should always be initiated in the command line using the relevant submission scripts (see job_submission folder)
+*Warning*: never run a calculation directly through Gaussview. Gaussian calculations should always be initiated in the command line using the relevant submission scripts (see job_submission folder)
 
 [Wiki of Gaussian error messages](https://docs.computecanada.ca/wiki/Gaussian_error_messages)
 
