@@ -10,7 +10,7 @@ ___
 
 Ask Matt to get you added to the list of Anatra and Gaussian users.
 
-Familiarise yourself with the (Introduction to the Anatra HTC service)[https://research-software-skills-bath.github.io/intro-anatra/00_schedule.html]
+Familiarise yourself with the [Introduction to the Anatra HTC service](https://research-software-skills-bath.github.io/intro-anatra/00_schedule.html)
 
 ___
 
@@ -46,9 +46,10 @@ ___
 
 The UNIX language is used to interact with the terminal.
 
-Learn and get used to the following basic unix commands (ls, cp, rm, mv, cat, head, tail, cd, pwd, mkdir, rmdir). See this useful link.)[https://www.unixtutorial.org/basic-unix-commands]
+Learn and get used to the following basic unix commands (ls, cp, rm, mv, cat, head, tail, cd, pwd, mkdir, rmdir). [See this useful link.](https://www.unixtutorial.org/basic-unix-commands)
 
 See LINK TO PAGE for some explanations.
+
 ___
 
 ### 6. Set up folders:
@@ -72,17 +73,14 @@ In the simplest terms, the `.bashrc` is a script that is run whenever a terminal
 
 Under "# User specific aliases and functions" add the following lines (if not already present) to the .bashrc (`nano ~/.bashrc`)
 
+>
 >`module load gcc`
-
 >`module load slurm`
-
 >`module load gaussview`
-
 >`module load Anaconda3`
-
 >`module load TurboVNC`
-
 >`export PATH=/scratch/projects/pra-000x/scripts:$PATH`
+>
 
 Replace `/pra-000x/` with the path to your own scripts directory (use `pwd` whilst in your scripts directory).
 
@@ -93,7 +91,8 @@ ___
 
 ### 8. Download Useful Resources
 
-Clone the useful_resouces repository from GitHub with the following command: `git clone https://github.com/the-grayson-group/useful_resources.git`
+Clone the useful_resouces repository from GitHub with the following command:
+`git clone https://github.com/the-grayson-group/useful_resources.git`
 
 Copy any useful scripts to your Scripts folder, e.g. q, gaussian16_submit.sh, stationary_points.sh, etc
 
@@ -138,7 +137,7 @@ Gaussian is a program we use for electronic structure modelling. Although we can
 
 *Warning*: never run a calculation directly through gaussview. Gaussian calculations should always be initiated in the command line using the relevant submission scripts (see job_submission folder)
 
-(Wiki of Gaussian error messages)[https://docs.computecanada.ca/wiki/Gaussian_error_messages]
+[Wiki of Gaussian error messages](https://docs.computecanada.ca/wiki/Gaussian_error_messages)
 
 The method of accessing Gaussview has changed from Balena. Below are instructions:
 
@@ -158,4 +157,4 @@ ___
 
 ### 11. Accessing Anatra remotely (off campus)
 
-To access Anatra from your personal laptop or any device off campus you must first set up a (VPN to the Bath network)[ https://www.bath.ac.uk/guides/setting-up-vpn-on-your-device/]. Once done, you can access balena at any time by connecting to the VPN and running the following in a terminal window: `ssh -X yourusername@balena.bath.ac.uk`
+To access Anatra from your personal laptop or any device off campus you must first set up a [VPN to the Bath network]( https://www.bath.ac.uk/guides/setting-up-vpn-on-your-device/). Once done, you can access balena at any time by connecting to the VPN and running the following in a terminal window: `ssh -X yourusername@balena.bath.ac.uk`
