@@ -1,6 +1,6 @@
 layout: page
 title: "test_one"
-permalink: /URL-PATH
+permalink: /about
 
 # Testing 
 ## Testing
