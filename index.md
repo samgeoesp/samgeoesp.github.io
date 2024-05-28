@@ -6,7 +6,8 @@ I think a lot of people with agree with me that writing about yourself is a labo
 
 ![me](docs/assets/me.jpg)
 
-# [Gradient Descent](gradient_descent.md)
+# [Transfer Learning for Barrier Prediction](tl_paper.md)
+
 
 
 
