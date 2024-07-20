@@ -7,8 +7,11 @@ I think a lot of people with agree with me that writing about yourself is a labo
 ![me](docs/assets/me.jpg)
 
 # [Transfer Learning for Barrier Prediction](tl_paper.md)
-## 1st June 2024
-### *Samuel Espley*
+***1st June 2024*** - *Samuel Espley*
+
+# [geomtosmarts.py](geomtosmarts.md)
+***20th July 2024*** - *Samuel Espley*
+
 
 
 
