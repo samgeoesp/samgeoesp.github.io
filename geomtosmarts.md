@@ -20,7 +20,7 @@ There are several methods that look at providing a more general feature represen
 
 Breaking this down, reactants are on the left and separated by ```.```. To designate the difference between reactants and products, the user adds ```>>```. There is more functionality but for the purpose of this post, that will do.
 
-These reaction SMILES then get fed into the [ReaKE website]() or the [ReaKE code](https://github.com/biomed-AI/ReaKE) to generate the representation.
+These reaction SMILES then get fed into the [ReaKE website](https://bio-web1.nscc-gz.cn/app/ReaKE_fingerprints) or the [ReaKE code](https://github.com/biomed-AI/ReaKE) to generate the representation.
 
 ## geomtosmarts
 
